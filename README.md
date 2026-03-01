@@ -1,5 +1,4 @@
 
-
 # HOWTO PXE Boot C.H.I.P.
 
 # Introduction
@@ -17,9 +16,8 @@ It may require adjustments to fit your particular environment.
 
 - On the CHIP channel in Discord, user mfa298 suggested that booting the PocketCHIP via NFS/tftp via USB Ethernet. This way you could easily test different images. Even easier than booting via USB as you could change images and rootfs on the fly:
 		   
-		- USB Ethernet dongles are not likely to work as uboot would have to be compiled with support for whatever ethernet dongle to use.
-	  
-		- But it is not needed. The micro USB cable that powers the C.H.I.P. can be used as the stock uboot supports ethernet via USB. 
+	- USB Ethernet dongles are not likely to work as uboot would have to be compiled with support for whatever ethernet dongle to use.
+	- But it is not needed. The micro USB cable that powers the C.H.I.P. can be used as the stock uboot supports ethernet via USB. 
 
 ## Method Overview
 
