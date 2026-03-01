@@ -1,0 +1,6 @@
+menu include pxelinux.cfg/menus/base.menu
+timeout 100
+
+# default b126-stable-pocketchip
+default b149-stable-gui
+

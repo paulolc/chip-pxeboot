@@ -1,0 +1,17 @@
+menu title Boot from which CHIP image?
+
+# Original PocketCHIP image
+label b126-stable-pocketchip
+    menu label Original PocketCHIP image (stable-pocketchip-b126)
+    kernel pxe/b126/zImage
+    fdt pxe/b126/sun5i-r8-chip.dtb
+    initrd pxe/b126/initrd.uimage
+    append rw earlyprintk root=/dev/nfs nfsroot=192.168.0.1:/srv/pxe/rootfs/b126 g_cdc.dev_addr=f8:dc:7a:00:00:02 g_cdc.host_addr=f8:dc:7a:00:00:01
+
+# Original PocketCHIP GUI image
+label b149-stable-gui
+    menu label Original PocketCHIP GUI image (stable-gui-b149)
+    kernel pxe/b149/zImage
+    fdt pxe/b149/sun5i-r8-chip.dtb
+    initrd pxe/b149/initrd.uimage
+    append rw earlyprintk root=/dev/nfs nfsroot=192.168.0.1:/srv/pxe/rootfs/b149 g_cdc.dev_addr=f8:dc:7a:00:00:02 g_cdc.host_addr=f8:dc:7a:00:00:01

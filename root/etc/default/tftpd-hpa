@@ -1,0 +1,9 @@
+# /etc/default/tftpd-hpa
+
+TFTP_USERNAME="tftp"
+TFTP_DIRECTORY="/srv/"
+#TFTP_DIRECTORY="/srv/tftp/"
+TFTP_ADDRESS=":69"
+#TFTP_OPTIONS="--secure --map-file /etc/default/tftpd-hpa.map"
+#TFTP_OPTIONS="--secure --map-file /etc/default/tftpd-hpa.map --verbose --verbosity 3"
+TFTP_OPTIONS="--secure"
