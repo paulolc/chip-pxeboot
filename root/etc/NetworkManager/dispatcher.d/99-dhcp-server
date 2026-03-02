@@ -1,0 +1,16 @@
+#!/bin/bash
+
+INTERFACE=$1
+ACTION=$2
+
+if [ "$INTERFACE" = "eth1" ]; then
+    case "$ACTION" in
+        up)
+            # The interface is up and has an IP, now safe to start/restart
+            systemctl restart isc-dhcp-server
+            ;;
+        down)
+            systemctl stop isc-dhcp-server
+            ;;
+    esac
+fi
